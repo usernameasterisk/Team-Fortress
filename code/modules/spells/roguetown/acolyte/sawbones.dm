@@ -15,7 +15,7 @@
 	sound = 'sound/gore/flesh_eat_03.ogg'
 	associated_skill = /datum/skill/misc/treatment
 	antimagic_allowed = TRUE
-	charge_max = 60 SECONDS
+	charge_max = 20 SECONDS
 	miracle = FALSE
 	devotion_cost = 0
 
@@ -28,7 +28,7 @@
 	associated_skill = /datum/skill/misc/treatment
 	antimagic_allowed = TRUE
 	include_user = TRUE
-	charge_max = 5 MINUTES
+	charge_max = 2 MINUTES
 	miracle = FALSE
 	devotion_cost = 0
 
@@ -41,7 +41,7 @@
 	sound = 'sound/combat/newstuck.ogg'
 	associated_skill = /datum/skill/misc/treatment
 	antimagic_allowed = TRUE
-	charge_max = 5 MINUTES
+	charge_max = 2 MINUTES
 	miracle = FALSE
 	devotion_cost = 0
 
@@ -255,7 +255,7 @@
 		target.setOxyLoss(-100)
 		target.adjustToxLoss(-50)
 		target.emote("rage")
-		target.blood_volume += BLOOD_VOLUME_SURVIVE
+		target.blood_volume += BLOOD_VOLUME_NORMAL
 		return TRUE
 	revert_cast()
 	return FALSE
