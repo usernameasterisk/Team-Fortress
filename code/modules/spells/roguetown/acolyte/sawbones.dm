@@ -6,7 +6,7 @@
 	miracle = FALSE
 	devotion_cost = 0
 
-/obj/effect/proc_holder/spell/targeted/docheal  /////// miricle but 1 tile range
+/obj/effect/proc_holder/spell/targeted/docheal  // miracle but 1 tile range
 	action_icon = 'icons/mob/actions/roguespells.dmi'
 	name = "Rapid Treatment"
 	overlay_state = "doc"
